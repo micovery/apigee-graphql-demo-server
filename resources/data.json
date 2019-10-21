@@ -1,0 +1,71 @@
+{
+  "resorts": [
+    {
+      "name": "Kirkwood",
+      "summit_elevation": 9800,
+      "base_elevation": 7800,
+      "id": "b7ae2f90-4117-11e9-b08f-59b0cb7e2c50"
+    },
+    {
+      "name": "Sierra at Tahoe",
+      "summit_elevation": 8852,
+      "base_elevation": 6640,
+      "id": "df8d3f60-4117-11e9-b08f-59b0cb7e2c50"
+    },
+    {
+      "name": "Heavenly",
+      "summit_elevation": 10067,
+      "base_elevation": 6255,
+      "id": "29ab8d40-4118-11e9-b08f-59b0cb7e2c50"
+    }
+  ],
+  "lifts": [
+    {
+      "name": "Sunrise",
+      "id": "2e026ed0-4119-11e9-b08f-59b0cb7e2c50",
+      "resort.id": "b7ae2f90-4117-11e9-b08f-59b0cb7e2c50"
+    },
+    {
+      "name": "Solitude",
+      "id": "34ad6f00-4119-11e9-b08f-59b0cb7e2c50",
+      "resort.id": "b7ae2f90-4117-11e9-b08f-59b0cb7e2c50"
+    },
+    {
+      "name": "Cornice Express",
+      "id": "3a775e00-4119-11e9-b08f-59b0cb7e2c50",
+      "resort.id": "b7ae2f90-4117-11e9-b08f-59b0cb7e2c50"
+    },
+    {
+      "name": "West Bowl Express",
+      "id": "97e70b80-4119-11e9-b08f-59b0cb7e2c50",
+      "resort.id": "df8d3f60-4117-11e9-b08f-59b0cb7e2c50"
+    },
+    {
+      "name": "Tahoe King",
+      "id": "97e70b81-4119-11e9-b08f-59b0cb7e2c50",
+      "resort.id": "df8d3f60-4117-11e9-b08f-59b0cb7e2c50"
+    },
+    {
+      "name": "Grandview Express",
+      "id": "97e70b82-4119-11e9-b08f-59b0cb7e2c50",
+      "resort.id": "df8d3f60-4117-11e9-b08f-59b0cb7e2c50"
+    }
+  ],
+  "trails": [
+    {
+      "name": "Homerun",
+      "id": "756238f0-4119-11e9-b08f-59b0cb7e2c50",
+      "resort.id": "b7ae2f90-4117-11e9-b08f-59b0cb7e2c50"
+    },
+    {
+      "name": "Graduation",
+      "id": "7ab34e70-4119-11e9-b08f-59b0cb7e2c50",
+      "resort.id": "b7ae2f90-4117-11e9-b08f-59b0cb7e2c50"
+    },
+    {
+      "name": "The Wall",
+      "id": "7e976670-4119-11e9-b08f-59b0cb7e2c50",
+      "resort.id": "b7ae2f90-4117-11e9-b08f-59b0cb7e2c50"
+    }
+  ]
+}
