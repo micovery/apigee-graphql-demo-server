@@ -102,6 +102,19 @@ In order to use the Apigee Edge Analytics plugin you have to pass the following 
     
     This is an Apigee Edge Micro-Gateway secret (see [managing-edge-micro-keys](managing-edge-micro-keys.md))
 
+```bash
+export GRAPHQL_APIGEE_KEY="YOUR-EDGE-MICROGW-KEY"
+export GRAPHQL_APIGEE_SECRET="YOUR-EDGE-MICROGW-SECRET"
+
+docker run \
+        -it --rm  \
+        -e "GRAPHQL_APIGEE_KEY=${GRAPHQL_APIGEE_KEY}" \
+        -e "GRAPHQL_APIGEE_SECRET=${GRAPHQL_APIGEE_SECRET}" \
+        -p 4000:4000 \
+        --name apigee-graphql-demo-server  \
+        micovery/apigee-graphql-demo-server
+```
+
 When the server starts, if it detects the above two environment variables, it will load the Apigee Edge Analytics plugin.
 
 By itself, this plugin will not do anything. The idea is that you deploy this plugin in combination with an API Proxy in
