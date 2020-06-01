@@ -305,7 +305,23 @@ class StackDriverGraphQLAX {
             json = (await fs.readFile(this.options.serviceAccountFile)).toString();
         }
 
-        let authClient = google.auth.fromJSON(JSON.parse(json));
+        let parsedJson = null;
+        try {
+            parsedJson = JSON.parse(json)
+        } catch(ex) {
+            //try base-64 decoding it
+            try {
+                parsedJson = JSON.parse(Buffer.from(json, 'base64').toString());
+            } catch(ex) {
+                //no-op
+            }
+        }
+
+        if (!parsedJson) {
+            throw new Error('Cloud not load GCP Service account JSON');
+        }
+
+        let authClient = google.auth.fromJSON(parsedJson);
 
         this.authClient = authClient.createScoped([
             'https://www.googleapis.com/auth/trace.append',
